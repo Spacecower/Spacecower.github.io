@@ -1,0 +1,143 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+.backwrap {
+    background: #113243; /* Old browsers */
+    background-image:url(../img/background2.png);
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    width:100%;
+    height:100%;
+    left:0;
+    top:0;
+    z-index:1;
+}
+
+
+/* Shapes & Animation
+*/
+
+.epic-icon {
+    font-size:210%!important;
+    opacity:0.5;
+    display:inline-block;
+    width:35px;
+    height:35px;
+    text-align:center;
+    transition:0.3s all;
+}
+
+.back-shapes {
+    width:100%;
+    height:100%;
+    position:relative;
+    overflow:hidden;
+}
+
+.back-shapes img {
+    opacity:0.2;
+    position:absolute;
+    width:2%;
+}
+
+.back-shapes em {
+    opacity:0.2;
+    position:absolute;
+    width:2%;
+    font-size:240%!important;
+    color:#fff;
+}
+
+@media screen and (max-width: 1400px) {
+    .back-shapes img {
+        width:3%;
+    }
+    .back-shapes em {
+        font-size:260%!important;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .back-shapes img {
+        width:4%;
+    }
+    .back-shapes em {
+        font-size:230%!important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .back-shapes img {
+        width:5%;
+    }
+    .back-shapes em {
+        font-size:180%!important;
+    }
+}
+
+.floating{animation-name:floating;-webkit-animation-name:floating;animation-duration:5s;-webkit-animation-duration:5s;animation-iteration-count:infinite;-webkit-animation-iteration-count:infinite;}
+@keyframes floating{0%{transform:translateY(0%) rotate(-55deg);}
+50%{transform:translateY(300%) rotate(55deg);}
+100%{transform:translateY(0%) rotate(-55deg);}
+}
+@-webkit-keyframes floating{0%{-webkit-transform:translateY(0%);}
+50%{-webkit-transform:translateY(300%);}
+100%{-webkit-transform:translateY(0%);}
+}
+@-webkit-keyframes floating{0%{-webkit-transform:translateY(0%);}
+50%{-webkit-transform:translateY(300%);}
+100%{-webkit-transform:translateY(0%);}
+}
+
+
+/* Container styles
+*/
+
+.container {
+    margin-top: 16px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+@media (max-width:767px) {
+    .container{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media (min-width:768px) {
+    .container{
+        width: 750px;
+    }
+}
+
+@media (min-width:992px) {
+    .container{
+        width: 970px;
+    }
+}
+
+
+
+@media (min-width:1200px) {
+    .container{width: 1200px;}
+}
+
+@media (max-width:1199px) {
+    #content_overhead {
+        display: none;
+    }
+    #sidebar {
+        margin-top: 0;
+    }
+    #stream-2 {
+        padding-right: 0;
+    }
+}
